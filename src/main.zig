@@ -10,9 +10,7 @@ pub fn main() !void {
     var strList = linkedList([]const u8).new(allocator);
 
     try strList.insert("Hello,");
-    try strList.append("Arbeit");
-    try strList.append("Macht");
-    try strList.append("Frei");
+    try strList.append("World!");
 
     try strList.print();
 }
